@@ -5,8 +5,21 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
-  footer: Component.Footer({
+  afterBody: [
+  Component.Comments({
+    provider: 'giscus',
+    options: {
+      repo: 'khodaparastan/cli-wiki',
+      repoId: 'R_kgDONFy6rg',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDONFy6rs4CjsGE',
+      darkTheme: "noborder_dark",
+      reactionsEnabled: false,
+      lightTheme: "preferred_color_scheme",
+    }
+  }),
+],
+footer: Component.Footer({
     links: {
       GitHub: "https://github.com/khodaparastan/cli-wiki",
     },

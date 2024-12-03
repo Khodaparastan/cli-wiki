@@ -13,7 +13,6 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
     },
     locale: "en-US",
     baseUrl: "cli.wiki",
